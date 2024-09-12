@@ -7,11 +7,14 @@ const Styled = {
     justify-content: center;
     align-items: normal;
     margin-top: 2em;
-    height: 100vh;
+    min-height: 100vh;
     background: #0f0f0f;
     color: white;
     position: relative;
     overflow: hidden;
+    @media (max-width: 480px) {
+      margin-top: 4em;
+    }
   `,
 
   BackgroundOverlay: styled.div`
@@ -41,6 +44,9 @@ const Styled = {
     color: #00f6ff;
     margin-bottom: 10px;
     text-shadow: 0px 0px 15px rgba(0, 246, 255, 0.8);
+    @media (max-width: 480px) {
+      font-size: 2em;
+    }
   `,
 
   Subtitle: styled.h2`
@@ -68,7 +74,6 @@ const Styled = {
     color: #0f0f0f;
     border-radius: 30px;
     cursor: pointer;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
     box-shadow: 0px 0px 20px rgba(0, 246, 255, 0.6);
     transition: background-color 0.3s ease, transform 0.2s ease;

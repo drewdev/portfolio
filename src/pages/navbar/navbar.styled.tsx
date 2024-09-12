@@ -14,6 +14,9 @@ const Styled = {
     @media (max-width: 768px) {
       padding: 0 10px;
     }
+    @media (max-width: 480px) {
+      height: auto;
+    }
   `,
 
   NavContent: styled.div`
@@ -26,6 +29,11 @@ const Styled = {
       align-items: center;
       padding: 10px 0;
       min-width: 0px;
+      width: 80%;
+    }
+    @media (max-width: 480px) {
+      flex-direction: column;
+      width: auto;
     }
   `,
 
@@ -40,9 +48,28 @@ const Styled = {
     }
   `,
 
+  NavGroup: styled.div`
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    @media (max-width: 480px) {
+    justify-content: space-between;
+      margin-top: 1em;
+    }
+  `,
+
   NavLinks: styled.div`
     display: flex;
     gap: 20px;
+    @media (max-width: 768px) {
+      gap: 10px;
+    }
+  `,
+
+  WeatherWidget: styled.div`
+    display: flex;
+    gap: 20px;
+    margin-right: 1em;
     @media (max-width: 768px) {
       gap: 10px;
     }
