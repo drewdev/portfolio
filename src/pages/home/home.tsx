@@ -33,7 +33,7 @@ const Home: React.FC<HomeProps> = () => {
   };
 
   const handleOnClick = () => {
-    setButtonText('Need a hand? Scroll down, I\'ve got you covered! 😄');
+    setButtonText('Need a hand? Scroll down, I\'ve got you covered!');
 
     setTimeout(() => {
       const targetY = window.innerHeight;
