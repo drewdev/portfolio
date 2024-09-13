@@ -1,7 +1,7 @@
 {
   "name": "drew-portfolio",
   "version": "0.1.0",
-  "homepage": "https://drewdev.github.io/portfolio",
+  "homepage": "https://www.pedrosebastiancm.com",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
