@@ -38,9 +38,9 @@ const Home: React.FC<HomeProps> = () => {
       <Styled.BackgroundOverlay />
       <Styled.Content>
         <Styled.Title>Pedro Sebastian Cajas Maureira</Styled.Title>
-        <Styled.Subtitle>Frontend Software Engineer</Styled.Subtitle>
+        <Styled.Subtitle>Full-stack Software Engineer</Styled.Subtitle>
         <Styled.Description>
-          I craft modern, responsive websites and applications with a strong emphasis on quality and user experience. I'm passionate about frontend development, proficient in both React and Angular. I can easily adapt to and contribute with any framework, and I'm always excited to learn something new.
+        I craft modern, responsive websites and applications with a strong focus on quality and user experience. I'm passionate about frontend development and proficient in both React and Angular. I adapt easily to any framework and thrive in multidisciplinary teams. I'm always eager to learn something new and take on fresh challenges.
         </Styled.Description>
         <SkillsSection />
         <Styled.Button 
