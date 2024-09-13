@@ -17,7 +17,7 @@ const fillAnimation = (level: number) => keyframes`
 
 const Styled = {
   Section: styled.section`
-    padding: .5em 2em 3em;
+    padding: .1em 2em 2.5em;
     margin-bottom: 2.5em;
     background-color: #121212;
     color: white;
@@ -56,7 +56,7 @@ const Styled = {
 
   SkillProgress: styled.div`
     flex: 3;
-    height: 15px;
+    height: 10px;
     background-color: #333;
     border-radius: 20px;
     overflow: hidden;

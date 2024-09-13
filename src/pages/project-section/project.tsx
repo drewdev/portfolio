@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Slider from 'react-slick';
 import Styled from './project.styled';
 
 interface Project {
@@ -21,17 +22,34 @@ const projects: Project[] = [
     webImage: 'mac.png',
     mobileImage: 'iphone.png',
   },
-  {
-    title: 'Project 3',
-    description: 'This is a description for project 1.',
-    webImage: 'mac.png',
-    mobileImage: 'iphone.png',
-  },
 ];
 
 const ProjectsSection: React.FC = () => {
   const [visibleProjects, setVisibleProjects] = useState<boolean[]>(new Array(projects.length).fill(false));
-
+  const settings = {
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
+    infinite: true,
+    speed: 1000,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   useEffect(() => {
     const handleScroll = () => {
       projects.forEach((_, index) => {
@@ -53,7 +71,9 @@ const ProjectsSection: React.FC = () => {
   }, []);
 
   return (
+    
     <Styled.Section id="projects-section">
+      <Slider {...settings}>
       {projects.map((project, index) => (
         <Styled.ProjectContainer
           key={index}
@@ -76,6 +96,7 @@ const ProjectsSection: React.FC = () => {
           </Styled.DescriptionContainer>
         </Styled.ProjectContainer>
       ))}
+    </Slider>
     </Styled.Section>
   );
 };

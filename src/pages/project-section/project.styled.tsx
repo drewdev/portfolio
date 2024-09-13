@@ -17,21 +17,47 @@ const fadeIn = keyframes`
 
 const Styled = {
   Section: styled.section`
-    padding: 100px 20px;
+    padding: 80px 20px;
+    @media (max-width: 780px) {
+      max-width: 40em;
+    }
+    @media (max-width: 460px) {
+      max-width: 24em;
+    }
+    @media (max-width: 375px) {
+      max-width: 19em;
+    }
+    .slick-slider {
+      width: 100%;
+      .slick-slide > div {
+        display: flex;
+        justify-content: center;
+        div:nth-child(-n+2) {
+          width: 100%;
+          display: flex !important;
+          justify-content: space-between;
+        }
+      }
+    }
   `,
 
   ProjectContainer: styled.div<ProjectContainerProps>`
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    align-items: initial;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 60px;
-    opacity: 0; /* Opacidad inicial */
+    opacity: 0;
+    padding: 20px;
+    box-sizing: border-box;
+
     h2 {
       font-size: 2rem;
       color: #00f6ff;
       margin-bottom: 10px;
     }
+
     ${({ visible }) =>
       visible === 'true' &&
       css`
@@ -49,19 +75,19 @@ const Styled = {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 768px) {
+
+    @media (max-width: 460px) {
       flex-direction: column;
-      align-items: center;
     }
   `,
 
   WebImage: styled.img`
     height: 19em;
-    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
     @media (max-width: 768px) {
       height: 14.5em;
+      max-width: 100%;
     }
     @media (max-width: 375px) {
       height: 11.5em;
@@ -73,16 +99,18 @@ const Styled = {
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 30%;
     @media (max-width: 768px) {
       height: 14.5em;
       margin-top: 2em;
+      max-width: 100%;
     }
   `,
 
   DescriptionContainer: styled.div`
     width: 45%;
     color: white;
-    text-align: left;
+    padding-left: 20px;
 
     p {
       font-size: 1.2rem;
@@ -92,7 +120,8 @@ const Styled = {
 
     @media (max-width: 768px) {
       text-align: center;
-      margin-top: 20px;
+      padding-left: 0;
+      width: 100%;
     }
   `,
 };

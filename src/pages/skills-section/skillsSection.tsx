@@ -9,7 +9,7 @@ interface Skill {
 
 const skills: Skill[] = [
   { name: 'Angular', level: 89, color: '#dd0031' },
-  { name: 'React', level: 70, color: '#61dafb' },
+  { name: 'React', level: 75, color: '#61dafb' },
   { name: 'TypeScript', level: 80, color: '#007acc' },
   { name: 'JavaScript', level: 85, color: '#f7df1e' },
   { name: 'HTML & CSS', level: 90, color: '#e34c26' },
