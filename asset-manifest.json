@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec4751af.css",
-    "main.js": "/static/js/main.e65c86af.js",
+    "main.js": "/static/js/main.876b9500.js",
     "static/media/mac.png": "/static/media/mac.5016e0888eed8499c476.png",
     "static/media/Pedro_Cajas_CV.pdf": "/static/media/Pedro_Cajas_CV.b2ff4c6675540db5da5d.pdf",
     "static/media/phone.png": "/static/media/phone.6a4662076e81507a4335.png",
@@ -13,10 +13,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.ec4751af.css.map": "/static/css/main.ec4751af.css.map",
-    "main.e65c86af.js.map": "/static/js/main.e65c86af.js.map"
+    "main.876b9500.js.map": "/static/js/main.876b9500.js.map"
   },
   "entrypoints": [
     "static/css/main.ec4751af.css",
-    "static/js/main.e65c86af.js"
+    "static/js/main.876b9500.js"
   ]
 }
