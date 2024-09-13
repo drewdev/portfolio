@@ -40,7 +40,7 @@ const Home: React.FC<HomeProps> = () => {
         <Styled.Title>Pedro Sebastian Cajas Maureira</Styled.Title>
         <Styled.Subtitle>Full-stack Software Engineer</Styled.Subtitle>
         <Styled.Description>
-        I craft modern, responsive websites and applications with a strong focus on quality and user experience. I'm passionate about frontend development and proficient in both React and Angular. I adapt easily to any framework and thrive in multidisciplinary teams. I'm always eager to learn something new and take on fresh challenges.
+        I craft modern, responsive websites and applications with a strong emphasis on quality and user experience. I'm passionate about frontend development, proficient in both React and Angular. I can easily adapt to and contribute with any framework and multidisciplinary team, and I'm always excited to learn something new. With over 5 years of experience, I bring a wealth of knowledge to the projects I work on.
         </Styled.Description>
         <SkillsSection />
         <Styled.Button 
