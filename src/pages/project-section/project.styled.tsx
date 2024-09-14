@@ -53,7 +53,7 @@ const Styled = {
     box-sizing: border-box;
 
     h2 {
-      font-size: 2rem;
+      font-size: 1.6em;
       color: #00f6ff;
       margin-bottom: 10px;
     }
@@ -108,22 +108,31 @@ const Styled = {
   `,
 
   DescriptionContainer: styled.div`
-    width: 45%;
+    width: 100%;
     color: white;
     padding-left: 20px;
 
+    text-align: left;
     p {
-      font-size: 1.2rem;
+      font-size: 1.2em;
       color: #cccccc;
       line-height: 1.5;
+      white-space: pre-line;
     }
 
+    a {
+      color: #00f6ff;
+      text-shadow: 0px 0px 15px rgba(0, 246, 255, 0.8);
+      &.link {
+        font-size: 1.6em;
+      }
+    }
     @media (max-width: 768px) {
-      text-align: center;
       padding-left: 0;
       width: 100%;
     }
   `,
+
 };
 
 export default Styled;

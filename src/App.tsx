@@ -7,7 +7,6 @@ const App: React.FC = () => {
         <div>
             <Navbar />
             <Home />
-            {/* Puedes agregar más secciones o componentes aquí */}
         </div>
     );
 };

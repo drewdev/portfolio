@@ -3,8 +3,8 @@ import Styled from './skillsSection.styled';
 
 interface Skill {
   name: string;
-  level: number; // Nivel de habilidad en porcentaje (0-100)
-  color: string; // Color representativo para la habilidad
+  level: number;
+  color: string;
 }
 
 const skills: Skill[] = [

@@ -1,11 +1,10 @@
 import styled, { keyframes } from 'styled-components';
 
 interface ProgressFillProps {
-  level: number; // El nivel de la barra en porcentaje
-  color: string; // El color de la barra
+  level: number;
+  color: string;
 }
 
-// Animación personalizada para que la barra se llene solo hasta el nivel correspondiente
 const fillAnimation = (level: number) => keyframes`
   from {
     width: 0;
@@ -51,7 +50,7 @@ const Styled = {
     flex: 1;
     font-weight: bold;
     font-size: 1rem;
-    color: #fff; // Mantener el nombre de la skill en blanco
+    color: #fff;
   `,
 
   SkillProgress: styled.div`
@@ -65,11 +64,10 @@ const Styled = {
 
   ProgressFill: styled.div<ProgressFillProps>`
     height: 100%;
-    background-color: ${({ color }) => color}; // Color dinámico basado en la habilidad
-    border-radius: 20px;
+    background-color: ${({ color }) => color};
     box-shadow: 0px 0px 20px ${({ color }) => color}, 0px 0px 40px ${({ color }) => color};
-    animation: ${({ level }) => fillAnimation(level)} 2s ease-in-out forwards; // La animación llega solo hasta el porcentaje correcto
-    width: ${({ level }) => `${level}%`}; // Establece el nivel al final de la animación
+    animation: ${({ level }) => fillAnimation(level)} 2s ease-in-out forwards;
+    width: ${({ level }) => `${level}%`};
   `,
 
   SkillPercentage: styled.span`
