@@ -104,11 +104,11 @@ const ProjectsSection: React.FC = () => {
   
   const settings = {
     autoplay: true,
-    autoplaySpeed: 15000,
+    autoplaySpeed: 10000,
     pauseOnHover: true,
-    infinite: false,
+    infinite: true,
     speed: 1000,
-    arrows: false,
+    arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [

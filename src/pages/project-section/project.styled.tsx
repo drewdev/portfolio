@@ -38,6 +38,12 @@ const Styled = {
           justify-content: space-between;
         }
       }
+      .slick-next:before {
+        color: #00f6ff;
+      }
+      .slick-prev:before {
+        color: #00f6ff;
+      }
     }
   `,
 
@@ -145,9 +151,12 @@ const Styled = {
   }
 
   ul {
-    display: ruby;
-    list-style-type: disc;
     padding: 0;
+  }
+  
+  ul li {
+    display: inline-block;
+    white-space: nowrap;
   }
 
   li {
