@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ec4751af.css",
-    "main.js": "/static/js/main.f61bf813.js",
+    "main.js": "/static/js/main.28067baa.js",
     "static/media/safentasty-web.png": "/static/media/safentasty-web.bf4850cf4c1ee32ccc00.png",
     "static/media/maccc.png": "/static/media/maccc.0a74aeb638f543b78012.png",
     "static/media/mac-safe.png": "/static/media/mac-safe.d878464555406d16b80f.png",
@@ -19,10 +19,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.ec4751af.css.map": "/static/css/main.ec4751af.css.map",
-    "main.f61bf813.js.map": "/static/js/main.f61bf813.js.map"
+    "main.28067baa.js.map": "/static/js/main.28067baa.js.map"
   },
   "entrypoints": [
     "static/css/main.ec4751af.css",
-    "static/js/main.f61bf813.js"
+    "static/js/main.28067baa.js"
   ]
 }
