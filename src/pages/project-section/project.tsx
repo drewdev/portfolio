@@ -8,8 +8,48 @@ interface Project {
   webImage: string;
   mobileImage: string;
   githubLink: string;
+  githubLinkBack?: string;
   demoLink: string
 }
+
+interface ContributedProjects {
+  website: string;
+  title: string;
+}
+const contributedProjects: ContributedProjects[] = [
+  {
+    website: 'https://www.bancofalabella.cl/',
+    title: 'Banco Falabella Chile'
+  },
+  {
+    website: 'https://www.bancofalabella.pe/',
+    title: 'Banco Falabella Perú'
+  },
+  {
+    website: 'https://www.bancofalabella.com.co/',
+    title: 'Banco Falabella Colombia'
+  },
+  {
+    website: 'https://solicitudes.bancofalabella.cl/',
+    title: 'Onboarding Banco Falabella Chile'
+  },
+  {
+    website: 'https://solicitudes.bancofalabella.pe/',
+    title: 'Onboarding Banco Falabella Perú'
+  },
+  {
+    website: 'https://www.cmrpuntos.cl/',
+    title: 'CMR Puntos Falabella Chile'
+  },
+  {
+    website: 'https://www.cmrpuntos.pe/',
+    title: 'CMR Puntos Falabella Perú'
+  },
+  {
+    website: 'https://www.cmrpuntos.com.co/',
+    title: 'CMR Puntos Falabella Perú'
+  },
+];
 
 const projects: Project[] = [
   {
@@ -34,20 +74,27 @@ const projects: Project[] = [
     demoLink: 'https://drewdev.github.io/safentasty/',
   },
   {
-    title: 'Project 2',
+    title: 'Catacomb Crawler: A Strategy-Based Dungeon Crawler',
     description: (
       <>
-        <p>Project 2 is another awesome project to demonstrate skills in modern frontend development.</p>
+        <p>
+          <a href={'https://drewdev.github.io/catacombcrawler/'} target="_blank">Catacomb Crawler</a> is a strategy-focused dungeon crawler game designed to challenge players' decision-making and resource management skills. Developed with a robust architecture using NestJS for the backend and Angular with NgRx for the frontend, this project demonstrates advanced state management, component-based architecture, and seamless interaction between the client and server.
+        </p>
+        <br />
+        <strong>The project showcases:</strong>
         <ul style={{ marginLeft: '20px' }}>
-          <li>Responsive design optimized for mobile and desktop.</li>
-          <li>Cool animations and smooth transitions.</li>
+          <li>Fully responsive design, ensuring an optimized experience on both desktop and mobile devices.</li>
+          <li>Smooth animations and intuitive transitions enhance the overall user experience.</li>
+          <li>Strategic gameplay mechanics that offer various decision-making paths and resource management challenges.</li>
+          <li>Leaderboard page featuring player scores and rankings for players.</li>
         </ul>
       </>
     ),
-    webImage: 'mac.png',
-    mobileImage: 'iphone.png',
-    githubLink: 'https://github.com/drewdev/project2',
-    demoLink: 'https://drewdev.github.io/project2/',
+    webImage: 'maccc.png',
+    mobileImage: 'iphonecc.png',
+    githubLink: 'https://github.com/drewdev/catacombcrawler',
+    githubLinkBack: 'https://github.com/drewdev/catacombcrawler-nestjs',
+    demoLink: 'https://drewdev.github.io/catacombcrawler/',
   },
 ];
 
@@ -123,9 +170,14 @@ const ProjectsSection: React.FC = () => {
             <Styled.DescriptionContainer>
               {project.description}
               <div style={{ marginTop: '15px' }}>
-                <a  href={project.githubLink} target="_blank" rel="noopener noreferrer" className="link">
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="link">
                   GitHub Repository / 
                 </a>
+                {project.githubLinkBack && (
+                  <a href={project.githubLinkBack} target="_blank" rel="noopener noreferrer" className="link">
+                    / GitHub Backend Repository / 
+                  </a>
+                )}
                 <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="link">
                   / Live Demo
                 </a>
@@ -134,6 +186,21 @@ const ProjectsSection: React.FC = () => {
           </Styled.ProjectContainer>
         ))}
       </Slider>
+      <Styled.ContributionsSection>
+        <h2>Projects I've Contributed To</h2>
+        <p>
+        In recent years, I have actively worked on various teams and projects for Banco Falabella across different countries. My role has ranged from frontend developer using Angular or React, to backend with Express or NestJS, and even test automation with TestCafe. I have also created monitoring dashboards in Kibana and Datadog, managed events and funnels in Google Analytics 4, and implemented SEO improvements to optimize visibility in search engines like Google.
+        </p>
+        <ul>
+          {contributedProjects.map((project, index) => (
+            <li key={index}>
+              <a href={project.website} target="_blank" rel="noopener noreferrer" className="link">
+                {project.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </Styled.ContributionsSection>
     </Styled.Section>
   );
 };
