@@ -83,6 +83,14 @@ const Styled = {
       transform: translateY(-5px);
     }
   `,
+  Link: styled.a`
+    text-decoration: none;
+    color: #00f6ff;
+    font-weight: bold;
+    transition: color 0.2s ease-in;
+    &:hover {
+      text-shadow: 0px 0px 15px rgba(0, 246, 255, 0.8);
+    }`
 };
 
 export default Styled;

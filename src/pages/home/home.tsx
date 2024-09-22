@@ -50,6 +50,9 @@ const Home: React.FC<HomeProps> = () => {
           {buttonText}
         </Styled.Button>
         <ProjectsSection />
+        <Styled.Link href="https://github.com/drewdev/portfolio" target="_blank" rel="noopener noreferrer" className="link">
+          You can view the code for this project here.
+        </Styled.Link>
       </Styled.Content>
     </Styled.Container>
   );
