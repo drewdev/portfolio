@@ -18,8 +18,9 @@ const Styled = {
   Section: styled.section`
     padding: .1em 2em 2.5em;
     margin-bottom: 2.5em;
-    background-color: #121212;
+    background-color: rgba(18, 18, 18, 0.8);
     color: white;
+    border-radius: 8px;
     h2 {
       font-size: 2rem;
       letter-spacing: 0.05em;

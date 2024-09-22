@@ -12,45 +12,6 @@ interface Project {
   demoLink: string
 }
 
-interface ContributedProjects {
-  website: string;
-  title: string;
-}
-const contributedProjects: ContributedProjects[] = [
-  {
-    website: 'https://www.bancofalabella.cl/',
-    title: 'Banco Falabella Chile'
-  },
-  {
-    website: 'https://www.bancofalabella.pe/',
-    title: 'Banco Falabella Perú'
-  },
-  {
-    website: 'https://www.bancofalabella.com.co/',
-    title: 'Banco Falabella Colombia'
-  },
-  {
-    website: 'https://solicitudes.bancofalabella.cl/',
-    title: 'Onboarding Banco Falabella Chile'
-  },
-  {
-    website: 'https://solicitudes.bancofalabella.pe/',
-    title: 'Onboarding Banco Falabella Perú'
-  },
-  {
-    website: 'https://www.cmrpuntos.cl/',
-    title: 'CMR Puntos Falabella Chile'
-  },
-  {
-    website: 'https://www.cmrpuntos.pe/',
-    title: 'CMR Puntos Falabella Perú'
-  },
-  {
-    website: 'https://www.cmrpuntos.com.co/',
-    title: 'CMR Puntos Falabella Perú'
-  },
-];
-
 const projects: Project[] = [
   {
     title: 'Safe-n-Tasty: Vegan & Allergy-Friendly Food E-commerce',
@@ -186,21 +147,7 @@ const ProjectsSection: React.FC = () => {
           </Styled.ProjectContainer>
         ))}
       </Slider>
-      <Styled.ContributionsSection>
-        <h2>Projects I've Contributed To</h2>
-        <p>
-        In recent years, I have actively worked on various teams and projects for Banco Falabella across different countries. My role has ranged from frontend developer using Angular or React, to backend with Express or NestJS, and even test automation with TestCafe. I have also created monitoring dashboards in Kibana and Datadog, managed events and funnels in Google Analytics 4, and implemented SEO improvements to optimize visibility in search engines like Google.
-        </p>
-        <ul>
-          {contributedProjects.map((project, index) => (
-            <li key={index}>
-              <a href={project.website} target="_blank" rel="noopener noreferrer" className="link">
-                {project.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </Styled.ContributionsSection>
+      
     </Styled.Section>
   );
 };

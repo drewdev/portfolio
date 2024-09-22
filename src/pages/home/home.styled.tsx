@@ -90,7 +90,44 @@ const Styled = {
     transition: color 0.2s ease-in;
     &:hover {
       text-shadow: 0px 0px 15px rgba(0, 246, 255, 0.8);
-    }`
+    }
+  `,
+  ContributionsSection: styled.section`
+    margin: 50px 0;
+    padding: 20px;
+    background-color: rgba(18, 18, 18, 0.8);
+    border-radius: 8px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    ul {
+      padding: 0;
+    }
+    
+    ul li {
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    li {
+      margin: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00f6ff;
+      font-weight: bold;
+      transition: color 0.2s ease-in;
+
+      &:hover {
+        text-shadow: 0px 0px 15px rgba(0, 246, 255, 0.8);
+      }
+    }
+  `,
 };
 
 export default Styled;
