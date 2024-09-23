@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
             <WeatherWidget />
           </Styled.WeatherWidget>
           <Styled.NavLinks>
-            <Styled.NavLink onClick={() => copyToClipboard('+56912345678')}>
+            <Styled.NavLink onClick={() => copyToClipboard('+56963376273')}>
               <Styled.NavIcon src={require('../../assets/icons/phone.png')} alt="Phone Icon" />
             </Styled.NavLink>
             <Styled.NavLink href={require('../../assets/Pedro_Cajas_CV.pdf')} download="Pedro_Cajas_CV.pdf">
