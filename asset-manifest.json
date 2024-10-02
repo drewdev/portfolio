@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.ec4751af.css",
-    "main.js": "/static/js/main.f8253503.js",
+    "main.js": "/static/js/main.39def0ae.js",
     "static/media/safentasty-web.png": "/static/media/safentasty-web.bf4850cf4c1ee32ccc00.png",
+    "static/media/Pedro_Cajas_CV.pdf": "/static/media/Pedro_Cajas_CV.0a931fefa48e6e8ac8b5.pdf",
     "static/media/maccc.png": "/static/media/maccc.0a74aeb638f543b78012.png",
     "static/media/mac-safe.png": "/static/media/mac-safe.d878464555406d16b80f.png",
     "static/media/iphone-safe.png": "/static/media/iphone-safe.6e908fe7711ab6049108.png",
     "static/media/iphonecc.png": "/static/media/iphonecc.d73cdf8b1d07e97db435.png",
     "static/media/safentasty-mobile.jpeg": "/static/media/safentasty-mobile.c226c5a815af7c8bd3db.jpeg",
     "static/media/mac.png": "/static/media/mac.5016e0888eed8499c476.png",
-    "static/media/Pedro_Cajas_CV.pdf": "/static/media/Pedro_Cajas_CV.b2ff4c6675540db5da5d.pdf",
     "static/media/phone.png": "/static/media/phone.6a4662076e81507a4335.png",
     "static/media/cv.png": "/static/media/cv.5d8a7b1ae7b9b075b419.png",
     "static/media/iphone.png": "/static/media/iphone.f8c4b03225c310e48853.png",
@@ -19,10 +19,10 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.ec4751af.css.map": "/static/css/main.ec4751af.css.map",
-    "main.f8253503.js.map": "/static/js/main.f8253503.js.map"
+    "main.39def0ae.js.map": "/static/js/main.39def0ae.js.map"
   },
   "entrypoints": [
     "static/css/main.ec4751af.css",
-    "static/js/main.f8253503.js"
+    "static/js/main.39def0ae.js"
   ]
 }
